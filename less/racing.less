@@ -1,0 +1,113 @@
+@import "colors.less";
+@import "fonts.less";
+@import "mixins.less";
+
+/*---------------------------------------------------------- Import Fonts -----------------------------------------------------------------*/
+
+
+* {
+    .box-sizing();
+    .transition();
+}
+
+body {
+    .width(100%);
+    height: 100%;
+    color: @secondary-color;
+    .font(@font-size-base, normal, @primary-font);
+    line-height: @line-height-base;
+    overflow: hidden;
+}
+
+.about_main {
+    .collection_section {
+        .width(100%);
+        float: left;
+        margin-top: 40px;
+
+        .container {
+            .new_text {
+                .width(100%);
+                float: left;
+                .font(@font-size-large, normal, @primary-font);
+                color: @primary-color;
+            }
+
+            .consectetur_text {
+                .width(100%);
+                float: left;
+                .font(@font-size-medium, 400, @primary-font);
+                color: @primary-color;
+                margin-left: 0px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .collection_section_3 {
+        .width(100%);
+        float: left;
+        padding-top: 0px;
+
+        .container {
+            .racing_shoes {
+                .width(100%);
+                float: left;
+                .bg-color(@background-color);
+                height: auto;
+                padding-top: 70px;
+                background-size: 100%;
+                padding-bottom: 100px;
+                margin-bottom: 100px;
+
+                .shoes-img3 {
+                    .width(100%);
+                    float: left;
+                    .text-center();
+
+                    img {
+                        margin-top: 4em;
+                        width: 70%;
+                    }
+                }
+
+                .sale_text {
+                    .width(100%);
+                    float: left;
+                    .font(@font-size-extra-large, bold, @secondary-font);
+                    .bg-color(@highlight-color);
+                    .text-center();
+                    padding: 30px 0px;
+                }
+
+                .number_text {
+                    .width(100%);
+                    float: left;
+                    .font(@font-size-extra-large, normal, @primary-font);
+                    color: @highlight-color;
+                    line-height: @line-height-large;
+                }
+
+                .seemore {
+                    .width(80%);
+                    height: 50px;
+                    .bg-color(@highlight-color);
+                    color: @white-color;
+                    .font(@font-size-medium, normal, @primary-font);
+                    margin-top: 35px;
+                    .text-center();
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    .width(100%);
+    float: left;
+    color: @white-color;
+    .text-center();
+    .font(@font-size-small, normal, @primary-font);
+    .bg-color(@highlight-color);
+    padding: 10px 0px;
+}
